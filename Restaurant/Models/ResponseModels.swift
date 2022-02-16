@@ -8,9 +8,9 @@
 import Foundation
 
 struct MenuResponse: Codable {
-    let menuItems: [MenItem]
+    let menuItems: [MenuItem]
     
-    init(menuItems: [MenItem] = []) {
+    init(menuItems: [MenuItem] = []) {
         self.menuItems = menuItems
     }
 }
