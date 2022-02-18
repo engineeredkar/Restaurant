@@ -14,6 +14,7 @@ class MenuController {
     let baseURl = URL(string: "http://localhost:8080/")!
     
     func fetchCategories() async throws -> [String] {
+        
         let categoriesURL = baseURl.appendingPathComponent("categories")
         let (data, response) = try await URLSession.shared.data(from: categoriesURL)
         
