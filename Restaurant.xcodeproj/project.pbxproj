@@ -7,19 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4B1638D027BD7ACB000F17B2 /* MenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B1638CF27BD7ACB000F17B2 /* MenuController.swift */; };
+		4B4E34DC27BA83AA00665DBD /* MenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B4E34DB27BA83AA00665DBD /* MenuTableViewController.swift */; };
+		4B4E34DE27BA83C800665DBD /* OrderTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B4E34DD27BA83C800665DBD /* OrderTableViewController.swift */; };
+		4B4E34E027BA842300665DBD /* CategoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B4E34DF27BA842300665DBD /* CategoryTableViewController.swift */; };
+		4B4E34E227BA8A3300665DBD /* MenuItemDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B4E34E127BA8A3300665DBD /* MenuItemDetailViewController.swift */; };
+		4B4E34E527BA8F0700665DBD /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B4E34E427BA8F0700665DBD /* MenuItem.swift */; };
+		4B4E34E727BA956700665DBD /* ResponseModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B4E34E627BA956700665DBD /* ResponseModels.swift */; };
 		4BAC841827ABF70300A15AFF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BAC841727ABF70300A15AFF /* AppDelegate.swift */; };
 		4BAC841A27ABF70300A15AFF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BAC841927ABF70300A15AFF /* SceneDelegate.swift */; };
-		4BAC841C27ABF70300A15AFF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BAC841B27ABF70300A15AFF /* ViewController.swift */; };
 		4BAC841F27ABF70300A15AFF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BAC841D27ABF70300A15AFF /* Main.storyboard */; };
 		4BAC842127ABF70400A15AFF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4BAC842027ABF70400A15AFF /* Assets.xcassets */; };
 		4BAC842427ABF70400A15AFF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BAC842227ABF70400A15AFF /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4B1638CF27BD7ACB000F17B2 /* MenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuController.swift; sourceTree = "<group>"; };
+		4B4E34DB27BA83AA00665DBD /* MenuTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewController.swift; sourceTree = "<group>"; };
+		4B4E34DD27BA83C800665DBD /* OrderTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderTableViewController.swift; sourceTree = "<group>"; };
+		4B4E34DF27BA842300665DBD /* CategoryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTableViewController.swift; sourceTree = "<group>"; };
+		4B4E34E127BA8A3300665DBD /* MenuItemDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItemDetailViewController.swift; sourceTree = "<group>"; };
+		4B4E34E427BA8F0700665DBD /* MenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItem.swift; sourceTree = "<group>"; };
+		4B4E34E627BA956700665DBD /* ResponseModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseModels.swift; sourceTree = "<group>"; };
 		4BAC841427ABF70300A15AFF /* Restaurant.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Restaurant.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BAC841727ABF70300A15AFF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4BAC841927ABF70300A15AFF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		4BAC841B27ABF70300A15AFF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4BAC841E27ABF70300A15AFF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4BAC842027ABF70400A15AFF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4BAC842327ABF70400A15AFF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -37,6 +49,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4B4E34DA27BA834D00665DBD /* Viewcontrollers */ = {
+			isa = PBXGroup;
+			children = (
+				4B4E34DF27BA842300665DBD /* CategoryTableViewController.swift */,
+				4B4E34DB27BA83AA00665DBD /* MenuTableViewController.swift */,
+				4B4E34DD27BA83C800665DBD /* OrderTableViewController.swift */,
+				4B4E34E127BA8A3300665DBD /* MenuItemDetailViewController.swift */,
+			);
+			path = Viewcontrollers;
+			sourceTree = "<group>";
+		};
+		4B4E34E327BA8B7100665DBD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4B4E34E427BA8F0700665DBD /* MenuItem.swift */,
+				4B4E34E627BA956700665DBD /* ResponseModels.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		4BAC840B27ABF70300A15AFF = {
 			isa = PBXGroup;
 			children = (
@@ -56,10 +88,12 @@
 		4BAC841627ABF70300A15AFF /* Restaurant */ = {
 			isa = PBXGroup;
 			children = (
+				4B4E34E327BA8B7100665DBD /* Models */,
+				4B4E34DA27BA834D00665DBD /* Viewcontrollers */,
+				4BAC841D27ABF70300A15AFF /* Main.storyboard */,
+				4B1638CF27BD7ACB000F17B2 /* MenuController.swift */,
 				4BAC841727ABF70300A15AFF /* AppDelegate.swift */,
 				4BAC841927ABF70300A15AFF /* SceneDelegate.swift */,
-				4BAC841B27ABF70300A15AFF /* ViewController.swift */,
-				4BAC841D27ABF70300A15AFF /* Main.storyboard */,
 				4BAC842027ABF70400A15AFF /* Assets.xcassets */,
 				4BAC842227ABF70400A15AFF /* LaunchScreen.storyboard */,
 				4BAC842527ABF70400A15AFF /* Info.plist */,
@@ -138,9 +172,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4BAC841C27ABF70300A15AFF /* ViewController.swift in Sources */,
+				4B4E34E527BA8F0700665DBD /* MenuItem.swift in Sources */,
+				4B1638D027BD7ACB000F17B2 /* MenuController.swift in Sources */,
+				4B4E34DE27BA83C800665DBD /* OrderTableViewController.swift in Sources */,
+				4B4E34E727BA956700665DBD /* ResponseModels.swift in Sources */,
+				4B4E34E227BA8A3300665DBD /* MenuItemDetailViewController.swift in Sources */,
 				4BAC841827ABF70300A15AFF /* AppDelegate.swift in Sources */,
+				4B4E34E027BA842300665DBD /* CategoryTableViewController.swift in Sources */,
 				4BAC841A27ABF70300A15AFF /* SceneDelegate.swift in Sources */,
+				4B4E34DC27BA83AA00665DBD /* MenuTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
