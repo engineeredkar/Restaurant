@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4B1638D027BD7ACB000F17B2 /* MenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B1638CF27BD7ACB000F17B2 /* MenuController.swift */; };
+		4B4740C727CCCB0300455C37 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B4740C627CCCB0300455C37 /* Order.swift */; };
 		4B4E34DC27BA83AA00665DBD /* MenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B4E34DB27BA83AA00665DBD /* MenuTableViewController.swift */; };
 		4B4E34DE27BA83C800665DBD /* OrderTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B4E34DD27BA83C800665DBD /* OrderTableViewController.swift */; };
 		4B4E34E027BA842300665DBD /* CategoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B4E34DF27BA842300665DBD /* CategoryTableViewController.swift */; };
@@ -23,6 +24,7 @@
 
 /* Begin PBXFileReference section */
 		4B1638CF27BD7ACB000F17B2 /* MenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuController.swift; sourceTree = "<group>"; };
+		4B4740C627CCCB0300455C37 /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
 		4B4E34DB27BA83AA00665DBD /* MenuTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewController.swift; sourceTree = "<group>"; };
 		4B4E34DD27BA83C800665DBD /* OrderTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderTableViewController.swift; sourceTree = "<group>"; };
 		4B4E34DF27BA842300665DBD /* CategoryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTableViewController.swift; sourceTree = "<group>"; };
@@ -65,6 +67,7 @@
 			children = (
 				4B4E34E427BA8F0700665DBD /* MenuItem.swift */,
 				4B4E34E627BA956700665DBD /* ResponseModels.swift */,
+				4B4740C627CCCB0300455C37 /* Order.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -174,6 +177,7 @@
 			files = (
 				4B4E34E527BA8F0700665DBD /* MenuItem.swift in Sources */,
 				4B1638D027BD7ACB000F17B2 /* MenuController.swift in Sources */,
+				4B4740C727CCCB0300455C37 /* Order.swift in Sources */,
 				4B4E34DE27BA83C800665DBD /* OrderTableViewController.swift in Sources */,
 				4B4E34E727BA956700665DBD /* ResponseModels.swift in Sources */,
 				4B4E34E227BA8A3300665DBD /* MenuItemDetailViewController.swift in Sources */,
