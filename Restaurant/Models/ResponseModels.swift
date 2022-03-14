@@ -13,6 +13,10 @@ struct MenuResponse: Codable {
     init(menuItems: [MenuItem] = []) {
         self.menuItems = menuItems
     }
+    
+    enum CodingKeys: String, CodingKey {
+        case menuItems = "items"
+    }
 }
 
 struct CategoriesResponse: Codable {
