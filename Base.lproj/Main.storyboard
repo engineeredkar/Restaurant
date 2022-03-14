@@ -232,11 +232,72 @@
                             <outlet property="delegate" destination="n0d-hO-zza" id="IGg-Ka-RdG"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="Bzs-Pj-TCO"/>
+                    <navigationItem key="navigationItem" title="Root View Controller" id="Bzs-Pj-TCO">
+                        <barButtonItem key="rightBarButtonItem" title="Submit" id="xqn-72-vCh">
+                            <connections>
+                                <action selector="submitTapped:" destination="n0d-hO-zza" id="OOl-Fb-G4a"/>
+                                <segue destination="7km-fZ-kiH" kind="presentation" identifier="confirmOrder" destinationCreationSelector="confirmOrder:" id="lPQ-J9-Ik2"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cup-xe-whx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1797.1014492753625" y="620.75892857142856"/>
+        </scene>
+        <!--Order Confirmation View Controller-->
+        <scene sceneID="lpf-xI-te3">
+            <objects>
+                <viewController id="7km-fZ-kiH" customClass="OrderConfirmationViewController" customModule="Restaurant" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="184-Ve-4Th">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="34" translatesAutoresizingMaskIntoConstraints="NO" id="Q2L-J8-tL9">
+                                <rect key="frame" x="174" y="363" width="67" height="82.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pdt-Py-NIQ">
+                                        <rect key="frame" x="0.0" y="0.0" width="67" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fCb-Q4-myo">
+                                        <rect key="frame" x="0.0" y="54.5" width="67" height="28"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain">
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="Dismiss">
+                                                    <attributes>
+                                                        <font key="NSFont" size="12" name="Helvetica"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <segue destination="OAw-6k-5iR" kind="unwind" identifier="dismissConfirmation" unwindAction="unwindToOrderListWithSegue:" id="J5G-mT-q4O"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="wOp-Bf-GBC"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Q2L-J8-tL9" firstAttribute="centerY" secondItem="wOp-Bf-GBC" secondAttribute="centerY" id="8U9-A6-Rz2"/>
+                            <constraint firstItem="Q2L-J8-tL9" firstAttribute="leading" secondItem="wOp-Bf-GBC" secondAttribute="leading" constant="174" id="HlO-sh-ln5"/>
+                            <constraint firstItem="wOp-Bf-GBC" firstAttribute="trailing" secondItem="Q2L-J8-tL9" secondAttribute="trailing" constant="173" id="btM-QW-Gdm"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="confirmationLabel" destination="pdt-Py-NIQ" id="2vO-pQ-ntc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hgM-TK-Ff1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="OAw-6k-5iR" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="2616" y="621"/>
         </scene>
         <!--My Order-->
         <scene sceneID="Yw8-f0-bV0">
